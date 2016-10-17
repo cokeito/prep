@@ -1,3 +1,30 @@
-<h1>Pages#x</h1>
-<h1>cokito</h1>
-<p>Find me in app/views/pages/x.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+    <h1>cokito</h1>
+    <h2>Pages#x</h2>
+    
+    <form name="form" method="get" action="<%= pages_save_data_path %>">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu Nombre">
+      </div>
+     
+      <div class="form-group">
+        <label for="email">Email </label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu Email">
+      </div>
+     
+
+      <div class="form-group">
+        <label for="age">Edad</label>
+        <input type="number" class="form-control" id="age" name="age" placeholder="Ingresa tu edad">
+      </div>
+     
+      <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+
+    </div>
+  </div>
+</div>
